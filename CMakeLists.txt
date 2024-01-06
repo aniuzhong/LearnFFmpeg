@@ -27,9 +27,4 @@ include_directories(${FFMPEG_INCLUDE_DIRS})
 
 include_directories(include)
 
-add_subdirectory(Step1)
-
-if (NOT ${PROJECT_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_BINARY_DIR})
-    file(COPY "${PROJECT_SOURCE_DIR}/res" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-endif()
-
+add_subdirectory(ffplay)
